@@ -1,20 +1,25 @@
 import './App.css';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import {BrowserRouter as Router , Route , Routes } from 'react-router-dom'
 import Login from './Pages/Login';
 import Home from './Pages/Home';
 import Register from './Pages/Register';
-
+import UserRoutes from './Routes/UserRoutes';
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Login/>}/>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/register' element={<Register/>}/>
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path='/*' element={<Home/>}/>
+    //     <Route path='/login' element={<Login/>}/>
+    //     <Route path='/register' element={<Register/>}/>
+    //   </Routes>
+    // </BrowserRouter>
+    <Router>
+    <Routes>
+      <Route path='/*' element={<UserRoutes />} />
+    </Routes>
+  </Router>
    
-  );
+  )
 }
 
 export default App;
