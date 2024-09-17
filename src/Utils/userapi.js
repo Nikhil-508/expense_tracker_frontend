@@ -16,9 +16,17 @@ const addCategory = (values) => {
     return axiosInstance.post('/add-category', values);
 }
 
+const getAllCategories = () => {
+    return axiosInstance.get('/get-all-categories')
+}
+
+const addIncome = (values) => {
+    return axiosInstance.post('/add-income', values);
+}
+
 const getGraphData = () => {
     return axiosInstance.get('/get-graph-data')
 }
 
 
-export {login , register , userAuth , addCategory, getGraphData}
+export {login , register , userAuth , addCategory, getAllCategories, addIncome,  getGraphData}

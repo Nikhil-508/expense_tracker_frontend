@@ -9,17 +9,15 @@ const Graph = () => {
 
   const data = {
     labels: [
-      'Red',
-      'Blue',
-      'Yellow'
+      'Green',
+      'Red'
     ],
     datasets: [{
       label: 'My First Dataset',
-      data: [300, 50, 100],
+      data: [300, 500],
       backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
+        'rgb(34, 197, 94)',
+        'rgb(239, 68, 68)',
       ],
       hoverOffset: 4
     }]

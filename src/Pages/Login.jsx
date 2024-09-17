@@ -70,7 +70,6 @@ const Login = () => {
                             placeholder="Enter your password"
                         />
                     </div>
-                    {/* {error && <p className="text-red-900 mb-2">{error}</p>} */}
                     <button
                         type="submit"
                         className="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
